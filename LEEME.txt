@@ -1,0 +1,39 @@
+INSTALACIÓN EN XAMPP
+
+1. Descomprime la carpeta veramedica dentro de:
+   C:\xampp\htdocs\
+
+2. Abre XAMPP y enciende Apache y MySQL.
+
+3. Entra a:
+   http://localhost/phpmyadmin
+
+4. Importa:
+   database/veramedica.sql
+
+5. Abre:
+   http://localhost/veramedica/
+
+Usuarios demo:
+- Mostrador: mostrador@veramedica.com / 12345678
+- Doctor Edgar: edgar@veramedica.com / 12345678
+- Doctor Isis: isis@veramedica.com / 12345678
+- Cliente: cliente@veramedica.com / 12345678
+
+IMPORTANTE:
+Para PHPMailer, instala Composer y PHPMailer o copia tu carpeta vendor.
+El sistema no se rompe si PHPMailer no está configurado; en recuperar contraseña muestra el enlace para banco de pruebas.
+
+CORRECCIÓN AGREGADA:
+- El personal de mostrador puede subir imágenes de productos desde admin/productos.php.
+- Las imágenes nuevas se guardan en uploads/productos/.
+- Al editar producto, si no subes una imagen nueva se conserva la anterior.
+- El catálogo muestra la imagen y al dar clic abre una descripción completa del medicamento.
+
+
+CORRECCION PERSONAL:
+- En Mostrador > Personal puedes registrar usuarios nuevos con rol Mostrador o Doctor.
+- Puedes editar datos, cambiar contraseña y activar/desactivar.
+- Si el rol es Doctor, también se guarda especialidad y se crea su registro en doctores.
+- Si el rol es Mostrador, se guarda turno y notas en personal_mostrador.
+- Contraseña demo: 12345678 para los usuarios precargados.
